@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/h2/db/security
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        # show_sql: true
+        format_sql: true
+        use_sql_comments: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    # org.hibernate.type: trace
+
+jwt:
+  secret: a76afff8de72507926e1eca336c0d6213145404ec476a2df62d02cc6400bc45a14da43aee3028533fa463e92a70778ce27f6315e4dab2dcc11af87730e0d8a84da24cd89a9d8a0dd8ce51c2e99fcbe8cb9923de4c213a6a48f7529de8596f0602240ba78a1b872e9bee006e50da636eecb05d168e1f2ad8fc9d79f53f5a6cb9f7c3f9b341b51ade974eade34d025b4c0e31c4642a7716a3983ed191b2d0a0b6211deb6d7e04a9795f4eec8db241a58e1a9cd21e3df7a75c177b09108a93cec72cd0f07fa3ed7de2aaeff241315ccb75c6ec77dbe673bddb25ed619dbd90a6b8a9e4571c0fcff2d0c2330b136cbf5c66b8d3e5a252f2ceb759aaeb457800ef661
